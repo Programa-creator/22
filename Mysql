@@ -1,0 +1,14 @@
+CREATE TABLE Homework (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    description TEXT NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Lesson (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    homework_id INT NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (homework_id) REFERENCES Homework(id)
+);
