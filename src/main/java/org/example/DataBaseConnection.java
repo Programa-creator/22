@@ -22,7 +22,7 @@ public class DataBaseConnection {
             try {
                 connection.close();
             } catch (SQLException e) {
-                // ignore
+                
             }
         }
     }
